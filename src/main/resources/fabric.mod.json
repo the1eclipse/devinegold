@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "divine_gold",
+	"version": "${version}",
+	"name": "Divine Gold",
+	"description": "im_going_to_beat_someone_to_death_with_hammers.mp4",
+	"authors": [
+		"Dameille",
+		"Capozi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/divine_gold/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.capozi.divinegold.DivineGold"
+		],
+		"fabric-datagen": [
+			"net.capozi.divinegold.DivineGoldDataGenerator"
+		]
+	},
+	"mixins": [
+		"divine_gold.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
