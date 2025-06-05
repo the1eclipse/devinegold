@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "divine_gold:block/meteorite_crystal_1"
+  }
+}
