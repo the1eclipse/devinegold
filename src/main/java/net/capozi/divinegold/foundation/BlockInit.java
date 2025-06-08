@@ -4,10 +4,8 @@ import net.capozi.divinegold.DivineGold;
 import net.capozi.divinegold.content.blocks.meteorite.MeteoriteCrystalBlock;
 import net.capozi.divinegold.content.blocks.meteorite.MeteoriteOreBlock;
 import net.capozi.divinegold.content.blocks.meteorite.SeepingMeteoriteOreBlock;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -26,6 +24,7 @@ public class BlockInit {
                                     .solid()
                                     .nonOpaque()
                                     .strength(1.5F)
+                                    .emissiveLighting((state, world, pos) -> true)
                     )
             );
 
@@ -92,14 +91,7 @@ public class BlockInit {
 
 
     public static void registerBlocks() {
-        BlockRenderLayerMap.INSTANCE.putBlocks(
-                RenderLayer.getCutout(),
-                GROWN_METEORITE_CRYSTAL.block(),
-                METEORITE_CRYSTAL_4.block(),
-                METEORITE_CRYSTAL_3.block(),
-                METEORITE_CRYSTAL_2.block(),
-                METEORITE_CRYSTAL_1.block()
-        );
+        // static init
     }
 
     private static <B extends Block> BlockWithItem<B, BlockItem> registerBlockWithItem(String id, B block) {
