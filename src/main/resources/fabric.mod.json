@@ -19,6 +19,9 @@
 		"main": [
           "net.capozi.divinegold.DivineGold"
 		],
+		"client": [
+			"net.capozi.divinegold.client.DivineGoldClient"
+		],
 		"fabric-datagen": [
 			"net.capozi.divinegold.DivineGoldDataGenerator"
 		]
