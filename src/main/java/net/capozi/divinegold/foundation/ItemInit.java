@@ -24,4 +24,5 @@ public class ItemInit {
     public static final Item DIVINE_CERAMIC = registerItems("divine_ceramic", new Item(new FabricItemSettings()));
     public static final Item DIVINE_CERAMIC_TILE = registerItems("divine_ceramic_tile", new Item(new FabricItemSettings()));
     public static final Item DIVINE_GOLD_SHARD = registerItems("divine_gold_shard", new Item(new FabricItemSettings()));
+    public static final Item DIVINE_GOLD_COIN = registerItems("divine_gold_coin", new Item(new FabricItemSettings()));
 }

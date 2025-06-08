@@ -1,6 +1,7 @@
 package net.capozi.divinegold;
 
 import net.capozi.divinegold.foundation.BlockInit;
+import net.capozi.divinegold.foundation.ItemInit;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -15,8 +16,8 @@ public class DivineGold implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Hello Fabric world!");
-
+		LOGGER.info("Divine secrets");
+		ItemInit.itemsRegistry();
 		BlockInit.registerBlocks();
 	}
 
