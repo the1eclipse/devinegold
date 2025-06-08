@@ -20,7 +20,8 @@ public class ItemInit {
     public static void registerItemToToolsTabItemGroup(FabricItemGroupEntries entries) {
 
     }
-    public static final Item DIVINE_GOLD = registerItems("divine_gold", new Item(new FabricItemSettings()));
+    public static final Item DIVINE_GOLD_INGOT = registerItems("divine_gold_ingot", new Item(new FabricItemSettings()));
     public static final Item DIVINE_CERAMIC = registerItems("divine_ceramic", new Item(new FabricItemSettings()));
     public static final Item DIVINE_CERAMIC_TILE = registerItems("divine_ceramic_tile", new Item(new FabricItemSettings()));
+    public static final Item DIVINE_GOLD_SHARD = registerItems("divine_gold_shard", new Item(new FabricItemSettings()));
 }
