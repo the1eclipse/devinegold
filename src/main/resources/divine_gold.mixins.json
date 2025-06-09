@@ -3,7 +3,7 @@
 	"package": "net.capozi.divinegold.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+      "FabricLanguageProviderMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

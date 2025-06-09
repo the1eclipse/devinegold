@@ -1,10 +1,13 @@
 package net.capozi.divinegold.datagen;
 
 import net.capozi.divinegold.foundation.BlockInit;
+import net.capozi.divinegold.foundation.ItemInit;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
 
 public class DivineGoldModelProvider extends FabricModelProvider {
     public DivineGoldModelProvider(FabricDataOutput output) {
@@ -23,8 +26,15 @@ public class DivineGoldModelProvider extends FabricModelProvider {
         generator.registerAmethyst(BlockInit.METEORITE_CRYSTAL_1.block());
     }
 
+    private static void registerDefault(ItemModelGenerator generator, Item item) {
+        generator.register(item, Models.GENERATED);
+    }
     @Override
     public void generateItemModels(ItemModelGenerator generator) {
-
+        registerDefault(generator, ItemInit.DIVINE_GOLD_INGOT);
+        registerDefault(generator, ItemInit.DIVINE_CERAMIC);
+        registerDefault(generator, ItemInit.DIVINE_CERAMIC_TILE);
+        registerDefault(generator, ItemInit.DIVINE_GOLD_SHARD);
+        registerDefault(generator, ItemInit.DIVINE_GOLD_COIN);
     }
 }

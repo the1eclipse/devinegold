@@ -17,7 +17,7 @@ public class DivineGold implements ModInitializer {
 	public void onInitialize() {
 
 		LOGGER.info("Divine secrets");
-		ItemInit.itemsRegistry();
+		ItemInit.registerItems();
 		BlockInit.registerBlocks();
 	}
 

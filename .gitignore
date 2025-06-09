@@ -107,6 +107,7 @@ fabric.properties
 ### ForgeGradle template (this is fabric but good enough)
 # Minecraft client/server files
 run/
+src/main/generated/.cache/
 
 ### Gradle template
 .gradle
